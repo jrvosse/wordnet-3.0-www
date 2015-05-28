@@ -1,0 +1,340 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- based on terrafirma1.0 by nodethirtythree design -->
+<!-- http://www.nodethirtythree.com -->
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+    <title>Wordnet 3.0 in RDF</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="default.css" />
+    <link rel="stylesheet" type="text/css" href="extra.css" />
+  </head>
+  <body>
+
+    <div id="outer">
+	<div id="upbg"></div>
+	<div id="inner">
+	  <div id="header">
+	    <h1><span>Princeton Wordnet</span><sup>3.0</sup></h1>
+	    <h2>in RDF</h2>
+	  </div>
+	
+	  <div id="splash"></div>
+	
+	  <div id="menu">
+	    <ul>
+	      <li class="first"><a href="http://semanticweb.cs.vu.nl/lod/wn30/">Home</a></li>
+	      <li><a href="http://eculture.cs.vu.nl/git/public/?p=vocs/wordnet.git;a=tree;f=rdf;hb=HEAD">Download
+	      (git web)</a></li>
+	      <li><a href="http://wordnet.princeton.edu/">Wordnet@Princeton</a></li>
+	      <li><a href="mailto:Jacco.van.Ossenbruggen@few.vu.nl">Contact</a></li>
+	    </ul>
+
+	    <div id="date">May-September 2010</div>
+	  </div>
+	
+	  <!-- primary content start -->
+
+	  <div id="primarycontent">
+
+	    <div class="post">
+	      <div class="header">
+		<h3>Wordnet 3.0 in RDF</h3>
+		<div class="date"></div>
+	      </div>
+	      <div class="content">
+		<p>
+		  This RDF version of Wordnet 3.0 uses the following
+		  namespace:
+		</p>
+		<blockquote id="namespace" style="margin: 1em">
+		  <a href="http://purl.org/vocabularies/princeton/wn30/">
+		    http://purl.org/vocabularies/princeton/wn30/
+		  </a>
+		</blockquote>
+		<p id="redirection">
+		  Browsers requesting urls in this namespace will be
+		  redirected by purl.org to an HTML rendering of the
+		  requested
+		  resource. See <a href="http://purl.org/vocabularies/princeton/wn30/synset-chair-noun-1">wn30:synset-chair-noun-1</a>
+		  for an example. Semantic Web applications using the
+		  HTTP request header to explictly
+		  request application/rdf+xml will be redirected to
+		  a RDF/XML rendering of the <a href="http://www.w3.org/Submission/CBD/#alternatives">symmetric concise bounded
+			  description</a> of the resource. You can also override the request headers of your browser by adding a <code>.rdf</code>
+		  or <code>.ttl</code> suffix to the URL.
+		  See <a href="http://purl.org/vocabularies/princeton/wn30/synset-chair-noun-1.rdf">wn30:synset-chair-noun-1.rdf</a>
+		  for an example.
+		</p>
+		
+		<p id="download">
+		  Alternatively, you can <a href="http://eculture.cs.vu.nl/git/public/?p=vocs/wordnet.git;a=tree;f=rdf;hb=HEAD">
+		    browse or download the latest version</a> of all source files directly from our git repository.
+	    	   Tip: use the "snapshot" link on the top of the page to download all RDF files at once.
+		</p>
+		<p>
+		</p>
+	      </div>
+	    </div>
+
+	    <!--
+	       Post template:
+	       <div class="post">
+		 <div class="header">
+                   <h3>Title goes here</h3>
+                   <div class="date">XXX 2010</div>
+		 </div>
+		 <div class="content">
+                   <p>
+		     Content goes here
+		   </p>
+		 </div>
+	       </div>
+	       
+	       -->
+	       <div class="post">
+		 <div class="header">
+                   <h3>We're in the LOD cloud!</h3>
+                   <div class="date">Jacco, September 25, 2010</div>
+		 </div>
+		 <div class="content">
+		   More good news: Wordnet 3.0 is now also present in the famous <a href="http://lod-cloud.net">LOD cloud</a> graph!
+		   Many thanks to Anja and Richard!
+		   </p>
+		 </div>
+	 	</div>
+
+	    <div class="post">
+              <div class="header">
+                <h3>Schema files being updated</h3>
+                <div class="date">Jacco, 21 May 2010</div>
+              </div>
+              <div class="content">
+                <p>
+		  Mark, Antoine and I are busy cleaning up the schema files.  This is not ready yet,
+		  but you can follow our progress by 
+		  <a href="http://eculture.cs.vu.nl/git/public/?p=vocs/wordnet.git;a=tree;f=rdf;hb=HEAD"watching the git</a>.
+		</p>
+	      </div>
+	    </div>
+
+	    <div class="post">
+	      <div class="header">
+		<h3>Second beta release of Wordnet 3.0/2.0 mappings</h3>
+		<div class="date">Jacco, June 10, 2010</div>
+	      </div>
+	      <div class="content">
+		<p>
+		  I've published my mappings from Wordnet 3.0 synsets to Wordnet 2.0 synsets in the 
+		  <a href="http://eculture.cs.vu.nl/git/public/?p=vocs/wordnet.git;a=tree;f=rdf/wn20mappings;hb=HEAD">wn20mappings folder</a>.
+		</p>
+		<p>
+			Note:  The mappings in this folder are not based on any Princeton sourcefile.
+			All erroneous mappings are my responsibility, not Princeton's.
+		</p>
+		<h4>Mapping statistics and origin:</h4>
+		<p>
+		  The mappings in this folder have been created in multiple steps.
+		  The result of each step is reflected in a separate file.
+		</p>
+		<p>
+		  In the RDF version we have <strong>117,657</strong> Wordnet 3.0 synsets to be mapped.
+		</p>
+		<dl>
+		<dt>
+		  Step one: detecting synsets with identical label and gloss (103,339)</dt>
+		  <dd>I've detected 103,339 Wordnet 3.0 synsets with a unique one-to-one mapping to a Wordnet 2.0 synset
+		  on the basis of having both an identical label and gloss. I assume these synsets correspond.  
+		  Note that this first step covers already around 88% of all synsets.
+		  <br />Results are in file: glossmatches-m.ttl </br>
+		  An additional twelve Wordnet 3.0 synsets where found which had a mapping to two Wordnet 2.0 synsets, 
+		  based on identical gloss and label,
+		  and two Wordnet 3.0 synsets that where both mapped to the same Wordnet 2.0 synset
+		  <br />Results are in file: glossmatches-p.ttl </br>
+		  Since the mappings in the file above are ambiguous, we will ignore them in the following steps.
+		  </dd>
+
+		<dt>
+		  Step two: detecting synsets with identical label
+		  and strong family resemblences.
+		</dt>
+		 <dd>
+		   For all the 3.0 synsets not having a one-to-one mapping already, I've
+		   looked at 2.0 synsets that have identical labels <strong>and</strong>:
+		   <ol>
+		     <li>Both have a matching broader and narrower synset
+		    in the hyponym that was already matched by an
+		    earlier step.  <br/> Results are in file:
+		    label-childparent-matches.ttl (1,272/1,550).
+		     </li>
+		     <li>Only have a broader (based on hyponym, meronym or instance) match.<br/> 
+   Results are in file: label-parent-matches.ttl (3,396/3,682).<br/> 
+   Results are in file: label-meronym-matches.ttl (1,403/1,561).<br/> 
+   Results are in file: label-instance-matches.ttl (507/486).
+		     </li>
+		     <li>Only have a narrower (hyponym axis) match.
+		       Results are in file: label-child-matches.ttl (309/141).</li>
+		     <li>
+		       If non of the above applies, but a label occurs
+		       only once in wn30 and also only once in wn20
+		       (within the same part of speech), we consider the corresponding
+		       synsets to match as well. <br/> Results are in file:
+		       label-unique-matches.ttl (1562/1200).
+		       </li>
+		       <li>
+		       If non of the above applies, but the labels match
+		       and the glosses are very similar, we consider the corresponding
+		       synsets to match as well. <br/> Results are in file:
+		       label-neargloss-matches.ttl (823/666).
+
+		       </li>
+
+		     <li>Before saving the above 3 results, we have
+		       removed the synsets for which this step three resulted in ambiguous alignments,
+		       and saved this ambigous mappings in a separate file.
+		       Results are in file:<br/>
+		       ambiguous-label-pc-matches.ttl (253/279).
+		     </li>
+		   </ol>
+		 </dd>
+		 <dt>Step three: rerun step two 
+		 </dt>
+		 <dd>We rerun step two multiple times to take
+		 advantage of the new mappings generated.  Repeat
+		 until no new mappings are found (this was the case
+		 after three repetitions).  The second number in the
+		 statics above shows the number on which this stabelizes.
+		 </dd>
+		</dl>
+		<h4>Analysis of recall</h4>
+		<p>
+		  This leaves us with 
+		  117657 - 103339 - 1550 - 3682 - 1561 - 486 - 141 - 1200 - 666 - 165 = 4869 
+		  unmapped synsets.  
+		  These are in the file:
+		  <br />to_be_mapped.ttl (4869)
+		</p>
+		<p> A quick manual inspection showed that many of
+		these unmapped synsets are new senses of existing words.
+		  Improvements on the mappings will be posted on this site.
+		</p>
+	      </div>
+	    </div>
+	 
+	    <div class="post">
+	      <div class="header">
+		<h3>Alpha release of Wordnet 3.0 in RDF</h3>
+		<div class="date">Mark &amp; Jacco, May 10, 2010</div>
+	      </div>
+	      <div class="content">
+					<p>
+						Today we publish the RDF version of Princeton Wordnet 3.0 as
+						Linked Open Data in the following namespace:
+					</p>
+
+					<blockquote id="namespace" style="margin: 1em">
+						<a href="http://purl.org/vocabularies/princeton/wn30/">
+							http://purl.org/vocabularies/princeton/wn30/
+						</a>
+					</blockquote>
+
+					<p>
+						Browsers requesting urls in this namespace will be redirected by purl.org to
+						an HTML rendering of the requested resource.
+						Semantic Web applications requesting application/rdf+xml will be redirected to a RDF/XML rendering of the resource.
+					</p>
+
+					<p id="download">
+						Alternatively, you can <a href="http://eculture.cs.vu.nl/git/public/?p=vocs/wordnet.git;a=tree;f=rdf;hb=HEAD">
+						browse or download the latest version</a> of all source files directly from our git repository.
+						Tip: use the "snapshot" link on the top of the page to download all RDF files at once.
+						
+					</p>
+
+					<p id="search">
+						Unlike the 2.0 version hosted by W3C, you can interactively search this version by using the textbox 
+						at the right of <a href="http://semanticweb.cs.vu.nl/europeana/amalgame/conceptfinder?voc=http%3a%2f%2fpurl.org%2fvocabularies%2fprinceton%2fwn30%2f#lv=closed">this page</a>.	You can use this, for example, to explore the <a href="http://semanticweb.cs.vu.nl/europeana/browse/list_triples_with_object?l=literal(bank)&graph=http://purl.org/vocabularies/princeton/wn30/wordnet-senselabels.ttl">many senses</a> of the word <a href="http://purl.org/vocabularies/princeton/wn30/word-bank">bank</a>.
+					</p>
+				</div>			
+			</div>
+
+			<!-- primary content end -->
+	
+			</div>
+		
+			<div id="secondarycontent">
+
+			  <!-- secondary content start -->
+		
+			  <h3>About Wordnet 3.0 in RDF</h3>
+			  <div class="content">
+			    <p>
+			      The RDF files have been generated in a
+			      way similar to the method described by
+			      Mark van Assem et
+			      al. in <a href="http://www.w3.org/TR/wordnet-rdf/">RDF/OWL
+			      Representation of WordNet</a> on th W3C
+			      site.  In particular, the 3.0 version
+			      has a similar division between the basic
+			      and the full version.
+			      
+			      All <a href="http://eculture.cs.vu.nl/git/public/?p=vocs/wordnet.git;a=tree;hb=HEAD">conversion software</a> is available as open source.
+			    </p>
+			  </div>
+			  
+			  <div class="logos">
+			    <a href="http://www.europeanaconnect.eu/">
+			      <img src="img/econnect-banner.jpg"
+			      alt="Econnect project logo"/>
+			    </a>
+			    <a href="http://www.prestoprime.eu/">
+			      <img src="img/logo-pp.gif"
+			      alt="PrestoPrime project logo"/>
+			    </a>
+			  </div>
+
+			  <h3>Acknowledgments</h3>
+			  <div class="content">
+			    <p>
+			      This RDF version was based on Wordnet 3.0
+			      as distributed by <a href="http://wordnet.princeton.edu/wordnet/download/" >Princeton</a>. 
+			      
+			      The conversion software was written by
+			      Mark van Assem with additions from 
+			      Jacco van Ossenbruggen.
+			      
+			      Part of work presented here was funded by
+			      the EU through the 
+			      <a href="http://www.prestoprime.eu/">PrestoPrime</a>
+			      and 
+			      <a href="http://www.europeanaconnect.eu/">EuropeanaConnect</a> projects.
+			  </p>
+
+			  </div>
+			  <!--	  
+				  <h3>Links</h3>
+			  <div class="content">
+			    <ul class="linklist">
+			      <li class="first"><a href="#download">Download</a></li>
+			      <li class="first"><a href="#namespace">Namespace</a></li>
+			      <li class="first"><a href="#search">Search</a></li>
+			    </ul>
+			</div>
+			  -->
+			<!-- secondary content end -->
+
+		</div>
+	
+		<div id="footer">
+		
+			CSS design adapted from on <a href="http://www.nodethirtythree.com/">NodeThirtyThree</a>.
+		
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>
